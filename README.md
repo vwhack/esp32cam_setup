@@ -3,7 +3,7 @@
 **Instructions for flashing MicroPython on the ESP32CAM**  
 The current instructions support Linux users only, later revisions will include Windows and macOS 
 
-<img src="breadboard_connections.jpeg" width="80%" alt="ESP32CAM and FT232RL connected on a breadboard">  
+<img src="img/breadboard_connections.jpeg" width="80%" alt="ESP32CAM and FT232RL connected on a breadboard">  
 
 ## Hardware used
 * ESP32CAM
@@ -71,15 +71,15 @@ It is important to ensure your FT232RL voltage output is set to 5V
 
 ESP32CAM pins  
 
-<img src="esp32cam_pins.png" width="30%" alt="ESP32CAM pins diagram">
+<img src="img/esp32cam_pins.png" width="30%" alt="ESP32CAM pins diagram">
 
 Connect the ESP32CAM to the FT232RL   
 
-<img src="connections.png" width="50%" alt="ESP32CAM to FT232RL pin layout">
+<img src="img/connections.png" width="50%" alt="ESP32CAM to FT232RL pin layout">
 
 Make sure the ESP32CAM pins go to the correct FT232RL pins. The example above is for a generic board. Below are the pins of a FT232RL board that allows you to set the voltage output. It is also important to connect the `GPIO0` pin with `GND` (Shown in grey) on the ESP32CAM to allow flashing.
 
-<img src="FT232RL.png" width="20%" alt="FT232RL pin layout">
+<img src="img/FT232RL.png" width="20%" alt="FT232RL pin layout">
 
 | DTR  | RX | TX | VCC | CTS | GND |
 | ---- | -- | -- | --- | --- | --- |
@@ -99,12 +99,12 @@ From the `Tools` menu selct `Options`. In the options window select the `Interpr
 
 Set the interpreter to `ESP32` and the `Port or WebREPL` to `FT232R USB UART` as shown below
 
-<img src="thonny_options.png" width="50%" alt="Thonny options print screen">  
+<img src="img/thonny_options.png" width="50%" alt="Thonny options print screen">  
   
  
 To flash the ESP32CAM with MicroPython, click on the hyperlink in the interpreter window `Install or update firmware`
 
-<img src="firmware_installer.png" width="50%" alt="Thonny firmware installer print screen">  
+<img src="img/firmware_installer.png" width="50%" alt="Thonny firmware installer print screen">  
 
 Select the port and browse to the firmware folder in this project and select the .bin file. Select `From image file (keep)` in the Flash mode options.
 Also make sure to have `Erase flash before installing` selected.  
@@ -173,7 +173,7 @@ repl
 Make sure the options / Interpreter are set the same as for flashing.  
 Restart the ESP32CAM or press the reset button.  You should now see the repl window shown below.  
 
-<img src="thonny_repl.png" width="50%" alt="Thonny repl print screen"> 
+<img src="img/thonny_repl.png" width="50%" alt="Thonny repl print screen"> 
 
 
 
