@@ -173,7 +173,12 @@ repl
 Make sure the options / Interpreter are set the same as for flashing.  
 Restart the ESP32CAM or press the reset button.  You should now see the repl window shown below.  
 
-<img src="img/thonny_repl.png" width="50%" alt="Thonny repl print screen"> 
+<img src="img/thonny_repl.png" width="50%" alt="Thonny repl print screen">  
+
+## Thanks go to ...  
+
+Some original images used can be found in the tutorial written for Arduino [here](https://randomnerdtutorials.com/program-upload-code-esp32-cam/)  
+The updated firmware with driver by by [lemariva](https://twitter.com/lemariva) can be found at [https://github.com/lemariva/micropython-camera-driver](https://github.com/lemariva/micropython-camera-driver)
 
 
 
